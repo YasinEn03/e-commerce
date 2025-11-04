@@ -1,4 +1,4 @@
-service:
+services:
   ecommerce:
     image: postgres:18
     container_name: ecommerce
@@ -39,6 +39,11 @@ service:
       - ecommerce
     networks:
       - db_network
+
+networks:
+  db_network:
+    driver: bridge
+    internal: true
 
 volumes:
   postgres_data:
