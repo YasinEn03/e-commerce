@@ -7,7 +7,7 @@ services:
     entrypoint: ['/opt/keycloak/bin/kc.sh', 'start-dev']
     cap_drop: ['ALL']
     env_file:
-      - .env
+      - .kcenv
     ports:
       - published: '8880'
         target: '8080'
