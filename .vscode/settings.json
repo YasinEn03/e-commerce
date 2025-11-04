@@ -1,0 +1,79 @@
+{
+  // ==============================
+  // 🧠  Allgemeine Editor-Einstellungen
+  // ==============================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always",
+    "source.sortImports": "always",
+    "source.removeUnusedImports": "always",
+    "source.addMissingImports": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ==============================
+  // ⚙️  Prettier-Konfiguration
+  // ==============================
+  "prettier.requireConfig": false,
+  "prettier.useEditorConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+
+  // ==============================
+  // 🧩  ESLint-Integration
+  // ==============================
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "json"
+  ],
+
+  // ==============================
+  // 🧱  TypeScript & NestJS
+  // ==============================
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.format.enable": false,
+
+  // ==============================
+  // 📦  Terminal & Umgebung
+  // ==============================
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  // ==============================
+  // 💡  Editor-Qualität des Lebens
+  // ==============================
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.DS_Store": true
+  }
+}
