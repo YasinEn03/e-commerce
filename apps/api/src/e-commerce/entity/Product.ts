@@ -6,6 +6,8 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { ProductImage } from './product-image';
+import { ProductVariant } from './product-variant';
 
 @Entity()
 export class Product {

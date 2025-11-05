@@ -1,5 +1,15 @@
-import { Column, Entity, Index, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { Product } from './Product.js';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  Index,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm';
+import { ProductImage } from './product-image.js';
+import { Product } from './product.js';
 import { Price } from './Price.js';
 
 @Entity('product_variants')
@@ -25,4 +35,13 @@ export class ProductVariant {
 
   @OneToMany(() => Price, (pr) => pr.variant)
   prices!: Price[];
+
+  @OneToMany(() => ProductImage, (img) => img.productVariant)
+  images!: ProductImage[];
+
+  @CreateDateColumn()
+  createdAt!: Date;
+
+  @UpdateDateColumn()
+  updatedAt!: Date;
 }

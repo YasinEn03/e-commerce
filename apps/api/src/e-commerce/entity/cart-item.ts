@@ -1,6 +1,6 @@
 import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Cart } from './Cart';
-import { ProductVariant } from './ProductVariant';
+import { ProductVariant } from './product-variant';
 
 @Entity('cart_items')
 @Index(['cart', 'variant'], { unique: true })

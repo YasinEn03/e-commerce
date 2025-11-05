@@ -1,5 +1,5 @@
-import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { ProductVariant } from './ProductVariant';
+import { Column, Entity, Index, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { ProductVariant } from './product-variant';
 
 @Entity('prices')
 @Index(['variant', 'currency'], { unique: true })
@@ -8,6 +8,7 @@ export class Price {
   id!: string;
 
   @ManyToOne(() => ProductVariant, (v) => v.prices, { onDelete: 'CASCADE' })
+  @JoinColumn({ name: 'variantId' })
   variant!: ProductVariant;
 
   @Column({ length: 3 })
