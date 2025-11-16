@@ -8,8 +8,8 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { UserProfile } from './user-profile';
 import { OrderItem } from './order-item';
+import { UserProfile } from './user-profile';
 import { Payment } from './Payment';
 import { Shipment } from './Shipment';
 

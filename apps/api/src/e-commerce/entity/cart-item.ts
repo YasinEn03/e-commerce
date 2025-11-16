@@ -1,5 +1,5 @@
 import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { Cart } from './Cart';
+import { Cart } from './cart';
 import { ProductVariant } from './product-variant';
 
 @Entity('cart_items')
