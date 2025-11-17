@@ -1,6 +1,6 @@
 import { Expose, Transform, Type } from 'class-transformer';
 import { IsEnum, IsOptional, IsString, Length } from 'class-validator';
-import { Order } from '../entity/order';
+import { Order } from '../entity/Order';
 import { OrdersDto } from './order/order.dto';
 
 type providerType = 'stripe' | 'paypal' | 'manual' | 'other';

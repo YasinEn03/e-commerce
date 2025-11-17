@@ -1,7 +1,7 @@
 import { Expose, Transform, Type } from 'class-transformer';
 import { IsArray, IsNumber, IsOptional, IsString, Matches, ValidateNested } from 'class-validator';
-import { UserProfileDto } from './user-Profile.dto';
 import { CartItemDto } from './cart-item.dto';
+import { UserProfileDto } from './user-profile.dto';
 
 export class CartDto {
   @Expose()
