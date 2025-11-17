@@ -8,9 +8,9 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { Price } from './price';
 import { Product } from './product';
 import { ProductImage } from './product-image';
-import { Price } from './Price';
 
 @Entity('product_variants')
 @Index(['sku'], { unique: true })

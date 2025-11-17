@@ -2,8 +2,8 @@ import { Expose, Transform, Type } from 'class-transformer';
 import { IsEnum, IsNumber, IsObject, IsString } from 'class-validator';
 import { PaymentDto } from '../payment.dto';
 import { ShipmentDto } from '../shipment.dto';
+import { UserProfileDto } from '../user-profile.dto';
 import { OrderItemDto } from './create-order.dto';
-import { UserProfileDto } from '../user-Profile.dto';
 
 type OrderStatus = 'pending' | 'paid' | 'shipped' | 'refunded' | 'cancelled';
 
